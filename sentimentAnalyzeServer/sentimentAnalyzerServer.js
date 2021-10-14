@@ -132,6 +132,7 @@ app.get("/text/sentiment", (req,res) => {
     })
     .catch(err => {
         return res.send("Could not do desired operation"+err);
+        
     });
 });
 
