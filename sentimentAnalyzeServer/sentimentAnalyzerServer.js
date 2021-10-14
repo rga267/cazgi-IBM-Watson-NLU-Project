@@ -87,7 +87,7 @@ app.get("/url/sentiment", (req,res) => {
 //The endpoint for the webserver ending with /text/emotion
 app.get("/text/emotion", (req,res) => {
     //Extract the url passed from the client through the request object
-    let textToAnalyze = req.query.url
+    let textToAnalyze = req.query.text
     const analyzeParams = {
         "text": textToAnalyze,
         "features": {
@@ -112,7 +112,7 @@ app.get("/text/emotion", (req,res) => {
 
 app.get("/text/sentiment", (req,res) => {
     //Extract the url passed from the client through the request object
-    let textToAnalyze = req.query.url
+    let textToAnalyze = req.query.text
     const analyzeParams = {
         "text": textToAnalyze,
         "features": {
